@@ -15,8 +15,8 @@
       <div class="container-fluid">
         <h2 onclick="mostrarPagina('home')">MyOrders</h2>
         <div>
-          <a class="navbar-brand fs-3 mx-5" href="#" onclick="mostrarPagina('produtos')">Produtos</a>
-          <a class="navbar-brand fs-3 mx-5" href="#" onclick="mostrarPagina('cadastro')">Cadastro</a>
+          <a class="navbar-brand fs-5 mx-5" href="#" onclick="mostrarPagina('produtos')">Produtos</a>
+          <a class="navbar-brand fs-5 mx-5" href="#" onclick="mostrarPagina('cadastro')">Cadastro</a>
         </div>
       </div>
     </nav>
@@ -33,30 +33,16 @@
       <table class="table table-striped">
         <thead class="table-dark">
           <tr>
-            <th>ID</th>
             <th>Nome</th>
             <th>Preço</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>1</td>
-            <td>Produto A</td>
-            <td>R$ 10,00</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Produto B</td>
-            <td>R$ 20,00</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>Produto C</td>
-            <td>R$ 30,00</td>
-          </tr>
+
         </tbody>
       </table>
     </div>
+    
     
     <div id="cadastro" style="display: none;">
       <h3>Cadastro de Produto</h3>
@@ -69,7 +55,29 @@
           <label for="produtoPreco" class="form-label">Preço</label>
           <input type="number" class="form-control" id="produtoPreco" placeholder="Digite o preço">
         </div>
-        <button type="submit" class="btn btn-primary">Salvar</button>
+        <div class="mb-3">
+          <label for="produtoNome" class="form-label">Descrição</label>
+          <input type="text" class="form-control" id="produtoNome" placeholder="Digite a Descrição">
+        </div>
+        <button type="submit" class="btn btn-light">Salvar</button>
+      </form>
+    </div>
+    <div id="editar" style="display: none;">
+      <h3>Cadastro de Produto</h3>
+      <form>
+        <div class="mb-3">
+          <label for="produtoNome" class="form-label">Nome do Produto</label>
+          <input type="text" class="form-control" id="produtoNome" placeholder="Digite o nome">
+        </div>
+        <div class="mb-3">
+          <label for="produtoPreco" class="form-label">Preço</label>
+          <input type="number" class="form-control" id="produtoPreco" placeholder="Digite o preço">
+        </div>
+        <div class="mb-3">
+          <label for="produtoNome" class="form-label">Descrição</label>
+          <input type="text" class="form-control" id="produtoNome" placeholder="Digite a Descrição">
+        </div>
+        <button type="submit" class="btn btn-light">Salvar</button>
       </form>
     </div>
   </main>
