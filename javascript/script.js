@@ -4,3 +4,5 @@
       document.getElementById('produtos').style.display = 'none';
       document.getElementById(pagina).style.display = 'block';
     }
+
+    
